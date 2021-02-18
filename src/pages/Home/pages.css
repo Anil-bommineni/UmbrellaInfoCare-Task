@@ -1,0 +1,271 @@
+.card-sty {
+  overflow: scroll;
+  max-height: calc(100vh - 133px);
+}
+
+.card-sidesty {
+  padding-left: 31px !important;
+}
+
+.sty-card {
+  padding: 24px;
+}
+
+.btn1-sty {
+  width: 125px;
+  background-color: #32364f !important;
+  border-color: #32364f !important;
+}
+
+.btn2-sty {
+  border-color: #32364f !important;
+  background-color: #32364f !important;
+  margin-left: 22px;
+  width: 125px;
+}
+
+.title-sty {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 12px;
+  justify-content: space-between;
+}
+
+.scndRow {
+  font-size: 16px;
+  /* display: flex;
+    text-align: justify;
+    width: 92%; */
+}
+.fle-sty {
+  display: flex;
+  text-align: justify;
+  width: 94%;
+}
+
+.trade-head {
+  margin-bottom: 19px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cong-head {
+  margin-bottom: 19px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  align-items: center;
+  color: #162542;
+}
+
+.input-sty {
+  border: none !important;
+  width: 150% !important;
+  box-shadow: 0 0 0 40px #fff inset !important;
+}
+
+.input-sty2 {
+  border: none !important;
+  width: 100% !important;
+  box-shadow: 0 0 0 40px #fff inset !important;
+}
+
+.prim-sty {
+  background-color: #32364f !important;
+  border-color: #32364f !important;
+  width: -webkit-fill-available !important;
+  font-family: Montserrat !important;
+  height: 44px !important;
+}
+
+.auth-btn {
+  background-color: #32364f !important;
+  border-color: #32364f !important;
+  /* color: #fff !important; */
+}
+
+
+.auth-btn .ant-btn:hover,
+.ant-btn:focus {
+  color: #fff !important;
+  background: #162542;
+  border-color: #162542 !important;
+
+}
+
+
+.refresh-sty {
+  position: absolute;
+  margin-left: 127px;
+  margin-top: 2px;
+}
+
+.card-sty .ant-btn:hover,
+.ant-btn:focus {
+  color: #162542 !important;
+  background: #fff;
+  border-color: #162542 !important;
+}
+
+.anil-card {
+  max-width: 75% !important;
+  overflow: scroll !important;
+  flex-flow: row !important;
+  display: -webkit-box !important;
+  padding: 9px !important;
+}
+
+.msgg-sty {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  align-items: center;
+  width: 95%;
+  color: #162542;
+}
+
+.msg2-sty {
+  display: flex;
+  text-align: justify;
+}
+
+.akm-sty {
+  font-size: 20px !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #162542;
+}
+
+.img-fluid2 {
+  font-size: 16px;
+}
+
+.num-fluid {
+  font-size: 16px !important;
+  font-family: Montserrat !important;
+  margin-top: 4px !important;
+  margin-right: 9px !important;
+}
+
+.scndRow2 {
+  font-size: 11px !important;
+  margin-top: 10px;
+}
+
+.gif-sty {
+  padding: 0px !important;
+}
+
+.gif-sty .ant-drawer-body {
+  padding: 0px !important;
+}
+
+@media (min-width: 1600px) {
+  .final-btn {
+    position: fixed !important;
+    right: 0px !important;
+    bottom: 0 !important;
+    width: 561px !important;
+  }
+}
+
+.final-btn {
+  position: fixed !important;
+  right: 0px !important;
+  bottom: 0 !important;
+  width: 561px !important;
+}
+
+.gif-sty {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.button-sty {
+  position: absolute;
+  right: 152px;
+  bottom: 26px;
+  background: #f1f1f1;
+  border-radius: 7px;
+  width: 86px;
+  /* border-color: #162542 !important; */
+}
+
+.button-sty2 {
+  position: absolute;
+  right: 50px;
+  bottom: 26px;
+  background: #f1f1f1;
+  border-radius: 7px;
+  width: 86px;
+  border-color: #162542 !important;
+}
+
+.playimg {
+  margin-left: 14px;
+  width: 80px !important;
+  margin-top: 6px;
+}
+
+.rem-sty {
+  margin-bottom: 2rem !important;
+}
+
+.con-sty {
+  margin-left: 8px;
+}
+
+.button-sty .ant-btn {
+  background-color: #f1f1f1 !important;
+  border-color: #f1f1f1 !important;
+  border-radius: 7px !important;
+}
+
+.button-sty2 .ant-btn {
+  background-color: #f1f1f1 !important;
+  border-color: #f1f1f1 !important;
+  border-radius: 7px !important;
+}
+
+.ryt-sty {
+  margin-left: 22px !important;
+}
+
+.num-sty {
+  margin-right: 22px;
+}
+
+/* .skelton-sty {
+  background-color:#d9d9d9;
+  animation: skelton infinite linear;
+}
+
+@keyframes skelton {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.5;
+  }
+} */
+
+/* .disp-sty{
+    display: none !important;
+} */
+
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper{
+  box-shadow: #92969e 0px 6px 8px 0px !important;
+
+}
