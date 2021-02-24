@@ -1,8 +1,6 @@
 import React from "react";
-import MainLayout from "../../Layouts/MainLayout";
-import { Modal, Button } from "antd";
+import { Modal} from "antd";
 import gglimg from "../../images/googleapps.svg";
-
 import gglbuss from "../../images/googlebusiness.png";
 import gglchrome from "../../images/googlechrome.png";
 import gglads from "../../images/googleads.png";

@@ -1,7 +1,6 @@
-import React, { useState, useContext, useEffect } from "react";
+import React from "react";
 import MainLayout from '../../Layouts/MainLayout';
 import { Card, Button } from "antd";
-import axios from "axios";
 import "./pages.css";
 import apps from "../../static/images/sidebar-icons/logo/application.svg";
 import play from "../../static/images/sidebar-icons/logo/playstore.svg";

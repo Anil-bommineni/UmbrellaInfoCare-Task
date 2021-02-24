@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Routes';
 import WorkSpaceOne from './Routes';
 
 import { BrowserRouter } from 'react-router-dom';

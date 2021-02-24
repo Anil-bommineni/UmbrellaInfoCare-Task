@@ -1,14 +1,13 @@
-import React, { useState, useContext } from "react";
-import MainLayout from "../../Layouts/MainLayout";
+import React, { useState, } from "react";
 import {
   Form,
   Input,
-  InputNumber,
+  
   Button,
   Card,
   Space,
   Select,
-  message,
+
 } from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import Lottie from "react-lottie";
@@ -19,9 +18,9 @@ import animated from "../../static/images/sidebar-icons/logo/jsonanimate.json";
 
 const { Option } = Select;
 
-function onChange(value) {
-  console.log(`selected ${value}`);
-}
+// function onChange(value) {
+//   console.log(`selected ${value}`);
+// }
 
 function onBlur() {
   console.log("blur");
@@ -45,38 +44,37 @@ const layout = {
   },
 };
 
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not validate email!",
-    number: "${label} is not a validate number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
-};
+// const validateMessages = {
+//   required: "${label} is required!",
+//   types: {
+//     email: "${label} is not validate email!",
+//     number: "${label} is not a validate number!",
+//   },
+//   number: {
+//     range: "${label} must be between ${min} and ${max}",
+//   },
+// };
 
 const onFinish = (values) => {
   console.log(values);
 };
 
 function WorkSpaceThree(props) {
-  const [app_name, setApp_name] = useState("");
-  const [app_code, setApp_code] = useState("");
-  const [profile_start_code, setProfile_start_code] = useState("");
-  const [app_website, setApp_website] = useState("");
-  const [app_link, setApp_link] = useState("");
-  const [app_icon, setApp_icon] = useState("");
-
-  const [data, setdata] = useState("");
-  const [authenticated, setauthenticated] = useState(false);
-  const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
-  const [apiAuth, setapiAuth] = useState(false);
-  const [loader, setloader] = useState(false);
-  const [availableemail, setavailable] = useState("");
-  const [btnname, setbtnname] = useState("Check");
-  const [btncolor, setbtncolor] = useState("white");
+  // const [app_name, setApp_name] = useState("");
+  // const [app_code, setApp_code] = useState("");
+  // const [profile_start_code, setProfile_start_code] = useState("");
+  // const [app_website, setApp_website] = useState("");
+  // const [app_link, setApp_link] = useState("");
+  // const [app_icon, setApp_icon] = useState("");
+  // const [data, setdata] = useState("");
+  // const [authenticated, setauthenticated] = useState(false);
+  // const [email, setemail] = useState("");
+  // const [password, setpassword] = useState("");
+  const [apiAuth] = useState(false);
+  const [loader] = useState(false);
+  // const [availableemail, setavailable] = useState("");
+  const [btnname] = useState("Check");
+  const [btncolor] = useState("white");
   const [gifload, setgifload] = useState(false);
 
   const [dropValues, setdropValues] = useState([]);
@@ -91,7 +89,7 @@ function WorkSpaceThree(props) {
 
   const handleDropChange = async (value, index) => {
     console.log(value, index);
-    let x1 = value;
+    // let x1 = value;
     let n1 = [value];
 
     dropValues[index] = n1;
@@ -111,15 +109,16 @@ function WorkSpaceThree(props) {
   const savetoDB = () => {
     setgifload(true);
 
-    let body = {
-      app_name: app_name,
-      app_code: app_code,
-      profile_start_code: profile_start_code,
-      data: dropValues,
-      admin_email: availableemail, // and Admin email for the app which track the txns.
-      email: email, // admin email
-      token: localStorage.getItem("CounselAppToken"), // admin token
-    };
+    // let body = {
+    //   app_name: app_name,
+    //   app_code: app_code,
+    //   profile_start_code: profile_start_code,
+    //   data: dropValues,
+    //   admin_email: availableemail, // and Admin email for the app which track the txns.
+    //   // email: email, // admin email
+    //   token: localStorage.getItem("CounselAppToken"), // admin token
+    // };
+
   };
 
   return (
@@ -140,16 +139,14 @@ function WorkSpaceThree(props) {
             <span>Create GX App</span>
           </div>
 
-          {authenticated ? (
-            <></>
-          ) : (
+         
             <div>
               <Card>
                 <Form
                   {...layout}
                   name="nest-messages"
                   onFinish={onFinish}
-                  validateMessages={validateMessages}
+                  // validateMessages={validateMessages}
                 >
                   <Card
                     style={{
@@ -167,7 +164,6 @@ function WorkSpaceThree(props) {
                         className="input-sty"
                         placeholder="mani inc"
                         onChange={(e) => {
-                          setApp_name(e.target.value);
                           props.handleapp_name(e);
                         }}
                       />
@@ -188,7 +184,7 @@ function WorkSpaceThree(props) {
                         autoComplete="off"
                         className="input-sty"
                         placeholder="Mani"
-                        onChange={(e) => setApp_code(e.target.value)}
+                        // onChange={(e) => setApp_code(e.target.value)}
                       />
                     </Form.Item>
                   </Card>
@@ -207,7 +203,7 @@ function WorkSpaceThree(props) {
                         autoComplete="off"
                         className="input-sty"
                         placeholder="Mani Users"
-                        onChange={(e) => setProfile_start_code(e.target.value)}
+                        // onChange={(e) => setProfile_start_code(e.target.value)}
                       />
                     </Form.Item>
                   </Card>
@@ -331,7 +327,7 @@ function WorkSpaceThree(props) {
                         <Input
                           className="input-sty2"
                           type="email"
-                          onChange={(e) => setavailable(e.target.value)}
+                          // onChange={(e) => setavailable(e.target.value)}
                           placeholder="Enter Email"
                         />
 
@@ -375,7 +371,7 @@ function WorkSpaceThree(props) {
                           className="input-sty2"
                           type="password"
                           placeholder="Enter Password"
-                          onChange={(e) => setpassword(e.target.value)}
+                          // onChange={(e) => setpassword(e.target.value)}
                         />
 
                         {/* onClick={() => setauthenticated(true)} */}
@@ -404,7 +400,7 @@ function WorkSpaceThree(props) {
                 </Form>
               </Card>
             </div>
-          )}
+          
 
           <div className="mt-1 mb-3"></div>
 

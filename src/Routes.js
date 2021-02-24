@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from './pages/Home/Home';
 import WorkSpaceOne from './pages/Home/WorkSpaceOne';
 import MyAppsOne from './pages/Home/MyAppsOne';
 import tractionOne from './pages/Home/Traction' ;

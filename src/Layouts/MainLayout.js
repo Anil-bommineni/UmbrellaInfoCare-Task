@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React  from 'react';
 import './main-layout.scss';
 import Sidebar from './Sidebar/Sidebar';
 import Navbar from './Navbar/Navbar';
-import { CounselAppContext } from '../Context_Api/Context';
-import { Redirect } from 'react-router-dom';
+// import { CounselAppContext } from '../Context_Api/Context';
 
 function MainLayout({ children, active }) {
-  const { email } = useContext(CounselAppContext);
 
   return (
     <div style={{ minHeight: '100vh' }} className="main-layout">

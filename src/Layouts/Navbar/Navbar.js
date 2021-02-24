@@ -1,20 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
-import Fade from "react-reveal/Fade";
-import {
-  Menu,
-  Dropdown,
-  Select,
-  Tooltip,
-  Form,
-  Input,
-  InputNumber,
-  Button,
-} from "antd";
-import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
-import { CounselAppContext } from "../../Context_Api/Context";
+import React from "react";
+import { Select, Form, Input, InputNumber, Button } from "antd";
 import Modelpop from "../../pages/Home/Modelpop";
-
-const { Option } = Select;
 
 const layout = {
   labelCol: {
@@ -24,16 +10,16 @@ const layout = {
     span: 16,
   },
 };
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
-};
+// const validateMessages = {
+//   required: "${label} is required!",
+//   types: {
+//     email: "${label} is not a valid email!",
+//     number: "${label} is not a valid number!",
+//   },
+//   number: {
+//     range: "${label} must be between ${min} and ${max}",
+//   },
+// };
 
 function Navbar({ active }) {
   return (
@@ -59,7 +45,6 @@ function Navbar({ active }) {
               <Form
                 {...layout}
                 name="nest-messages"
-                validateMessages={validateMessages}
               >
                 <Form.Item
                   name={["user", "name"]}
@@ -90,7 +75,6 @@ function Navbar({ active }) {
                   rules={[
                     {
                       type: "number",
-                     
                     },
                   ]}
                 >

@@ -1,13 +1,13 @@
-import React, { useState, useContext, useEffect } from "react";
+import React from "react";
 import { Card } from "antd";
 import "./pages.css";
 import swag from "../../static/images/sidebar-icons/logo/swag.png";
 
 function WorkSpaceOne(props) {
   console.log(props);
-  const [apidata, setapidata] = useState([]);
-  const [lengthdata, setLengthdata] = useState();
-  const { visible } = props;
+  // const [apidata, setapidata] = useState([]);
+  // const [lengthdata, setLengthdata] = useState();
+  // const { visible } = props;
 
   return (
     <div className="card-sty">
@@ -26,7 +26,7 @@ function WorkSpaceOne(props) {
           <div className="ryt-sty">
             <div className="title-sty" style={{ display: "flex" }}>
               <div className="">
-                <img className="img-fluid mr-3" src={swag} />
+                <img className="img-fluid mr-3" src={swag} alt="anil" />
                 <span>User</span>
               </div>
 
